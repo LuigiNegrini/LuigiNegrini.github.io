@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+</head>
+
+<body>
+    <h1 style="background-color: cadetblue">Questionário de preferências musicais e doação de sangue</h1>
+    <form>
+        <p>
+            Nome: <input id="nome" name="nome" type="text">
+        </p>
+        <p>
+            Data de nascimento: <input id="nascimento" name="nascimento" type="date">
+        </p>
+        <p>
+            e-mail: <input id="email" name="email" type="email">
+        </p>
+        <p>
+            Foto: <br>
+            <input id="foto" name="foto" type="file" accept="image/png, image/jpg">
+        </p>
+        <p>
+            Gênero: <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option selected value="outro">Não binário</option>
+            </select>
+        </p>
+        <p>
+            Tipo sanguíneo: <br>
+            <label><input type="radio" name="tiposangue" value="A">A</label>
+            <label><input type="radio" name="tiposangue" value="B">B</label>
+            <label><input type="radio" name="tiposangue" value="AB">AB</label>
+            <label><input type="radio" name="tiposangue" value="O">O</label>
+        </p>
+        <p>
+            Rh: <br>
+            <label><input type="radio" name="rh" value="+">+</label>
+            <label><input type="radio" name="rh" value="-">-</label>
+        </p>
+        <p>
+            Doenças: <br>
+            <label><input type="checkbox" name="doencas" value="herpes">Herpes</label>
+            <label><input type="checkbox" name="doencas" value="aids">AIDS</label>
+            <label><input type="checkbox" name="doencas" value="pneumonia">Pneumonia</label>
+            <label><input type="checkbox" name="doencas" value="gripe">Gripe</label>
+        </p>
+        <p>
+            Biografia: <br>
+            <textarea id="biografia" name="biografia" rows="20" cols="50">
+                [Digite aqui]
+            </textarea>
+        </p>
+        <p>
+            Altura: <input type="range">
+        </p>
+        <p>
+            <button type="button" onclick="alert('hueheueheuh')">Clique aqui!</button>
+        </p>
+    </form>
+</body>
+
+</html>
