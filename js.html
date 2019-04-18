@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+</head>
+
+<body>
+    <ul>
+        <li>
+            x: <input id="x" type="text">
+        </li>
+        <li>
+            y: <input id="y" type="text">
+        </li>
+    </ul>
+    <label><input type="radio" id="soma" name="op">Soma</label>
+    <label><input type="radio" id="subtrai" name="op">Subtrai</label>
+    <label><input type="radio" id="multiplica" name="op">Multiplica</label>
+    <label><input type="radio" id="divide" name="op">Divide</label>
+    <button type="button" onclick="opera()">Opera X|Y</button>
+    <p id="resp"></p>
+    <script>
+        function opera() {
+            var x = parseFloat(document.getElementById('x').value);
+            var y = parseFloat(document.getElementById('y').value);
+            var op;
+
+            if (document.getElementById('soma').checked == true) {
+                op = x + y;
+            } else {
+                if (document.getElementById('subtrai').checked == true) {
+                    op = x - y;
+                } else {
+                    if (document.getElementById('multiplica').checked == true) {
+                        op = x * y;
+                    } else {
+                        if (document.getElementById('divide').checked == true) {
+                            op = x / y;
+                        } else {
+                            op = "Atenção! Selecione uma operação!"
+                        }
+                    }
+                }
+            }
+            if (isNaN(op) && typeof (op) != "string") {
+                op = "Não é um número, verifique suas entradas!"
+            }
+
+            document.getElementById('resp').innerHTML = op;
+        }
+    </script>
+
+</body>
+
+</html>
