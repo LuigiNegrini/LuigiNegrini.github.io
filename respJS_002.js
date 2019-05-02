@@ -6,7 +6,6 @@ function Q1() {
     console.log('X / Y: ' + x + ' / ' + y);
     console.log('Quociente = ' + Math.floor(x/y));
     console.log('Resto = ' + (x%y));
-    document.getElementById('RQ1').innerHTML = "Texto da resposta: " + resp;
 }
 
 function Q2() {
