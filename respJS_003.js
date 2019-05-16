@@ -19,3 +19,5 @@ function Q1() {
     console.log(pares);
     document.getElementById('RQ1').innerHTML = pares;
 }
+
+var
