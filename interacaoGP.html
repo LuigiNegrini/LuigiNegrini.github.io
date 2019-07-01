@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="formulasGP.js"></script>
+</head>
+
+<body>
+    <h1>Geometria plana</h1>
+
+    <h2>Área de um triângulo equilátero</h2>
+    <img src="/imgGP/">
+    <p> Lado: <input type="number" id="lado0"></p>
+    <p> <button type="button" onclick="ATriEq()">Calcular</button></p>
+    <p id="F0"> Sem resposta</p>
+
+    <h2>Perímetro de um triângulo equilátero</h2>
+    <img src="/imgGP/">
+    <p> Lado: <input type="number" id="lado1"></p>
+    <p> <button type="button" onclick="PTriEq()">Calcular</button></p>
+    <p id="F1"> Sem resposta</p>
+
+    <h2>Área de um triângulo qualquer</h2>
+    <img src="/imgGP/">
+    <p> Base: <input type="number" id="base0"></p>
+    <p> Altura: <input type="number" id="altura0"></p>
+    <p> <button type="button" onclick="ATri()">Calcular</button></p>
+    <p id="F2"> Sem resposta</p>
+
+    <h2>Perímetro de um triângulo qualquer</h2>
+    <img src="/imgGP/">
+    <p> Lado 1: <input type="number" id="lado2"></p>
+    <p> Lado 2: <input type="number" id="lado3"></p>
+    <p> Lado 3: <input type="number" id="lado4"></p>
+    <p> <button type="button" onclick="PTri()">Calcular</button></p>
+    <p id="F3"> Sem resposta</p>
+
+    <h2> Área de um quadrado</h2>
+    <img src="/imgGP/">
+    <p> Lado: <input type="number" id="lado5"></p>
+    <p> <button type="button" onclick="AQuad()">Calcular</button></p>
+    <p id="F4"> Sem resposta</p>
+
+    <h2> Perímetro de um quadrado</h2>
+    <img src="/imgGP/">
+    <p> Lado: <input type="number" id="lado6"></p>
+    <p> <button type="button" onclick="PQuad()">Calcular</button></p>
+    <p id="F5"> Sem resposta</p>
+
+    <h2> Área de um retângulo</h2>
+    <img src="/imgGP/">
+    <p> Base: <input type="number" id="base1"></p>
+    <p> Altura: <input type="number" id="altura1"></p>
+    <p> <button type="button" onclick="ARet()">Calcular</button></p>
+    <p id="F6"> Sem resposta</p>
+
+    <h2> Perímetro de um retângulo</h2>
+    <img src="/imgGP/">
+    <p> Base: <input type="number" id="base2"></p>
+    <p> Altura: <input type="number" id="altura2"></p>
+    <p> <button type="button" onclick="PRet()">Calcular</button></p>
+    <p id="F7"> Sem resposta</p>
+
+    <h2> Área de um paralelogramo</h2>
+    <img src="/imgGP/">
+    <p> Base: <input type="number" id="base3"></p>
+    <p> Altura: <input type="number" id="altura3"></p>
+    <p> <button type="button" onclick="APar()">Calcular</button></p>
+    <p id="F8"> Sem resposta</p>
+
+    <h2> Perímetro de um paralelogramo</h2>
+    <img src="/imgGP/">
+    <p> Lado 1: <input type="number" id="lado7"></p>
+    <p> Lado 2: <input type="number" id="lado8"></p>
+    <p> <button type="button" onclick="PPar()">Calcular</button></p>
+    <p id="F9"> Sem resposta</p>
+
+    <h2> Área do trapézio</h2>
+    <img src="/imgGP/">
+    <p> Base maior: <input type="number" id="base4"></p>
+    <p> Base menor: <input type="number" id="base5"></p>
+    <p> Altura: <input type="number" id="altura4"></p>
+    <p> <button type="button" onclick="ATrap()">Calcular</button></p>
+    <p id="F10"> Sem resposta</p>
+
+    <h2> Perímetro de um trapézio</h2>
+    <img src="/imgGP/">
+    <p> Base maior: <input type="number" id="base6"></p>
+    <p> Base menor: <input type="number" id="base7"></p>
+    <p> Lado 1: <input type="number" id="lado9"></p>
+    <p> Lado 2: <input type="number" id="lado10"></p>
+    <p> <button type="button" onclick="PTrap()">Calcular</button></p>
+    <p id="F11"> Sem resposta</p>
+
+    <h2> Área de um losango</h2>
+    <img src="/imgGP/">
+    <p> Diagonal 1: <input type="number" id="diagonal0"></p>
+    <p> Diagonal 2: <input type="number" id="diagonal1"></p>
+    <p> <button type="button" onclick="ALos()">Calcular</button></p>
+    <p id="F12"> Sem resposta</p>
+
+    <h2> Perímetro de um losango</h2>
+    <img src="/imgGP/">
+    <p> Lado: <input type="number" id="lado11"></p>
+    <p> <button type="button" onclick="PLos()">Calcular</button></p>
+    <p id="F13"> Sem resposta</p>
+
+    <h2> Área de um pentágono regular</h2>
+    <img src="/imgGP/">
+    <p> Lado: <input type="number" id="lado12"></p>
+    <p> <button type="button" onclick="APent()">Calcular</button></p>
+    <p id="F14"> Sem resposta</p>
+
+    <h2> Perímetro de um pentágono regular</h2>
+    <img src="/imgGP/">
+    <p> Lado: <input type="number" id="lado13"></p>
+    <p> <button type="button" onclick="PPent()">Calcular</button></p>
+    <p id="F15"> Sem resposta</p>
+
+    <h2> Área de um hexágono regular</h2>
+    <img src="/imgGP/">
+    <p> Lado: <input type="number" id="lado14"></p>
+    <p> <button type="button" onclick="AHex()">Calcular</button></p>
+    <p id="F16"> Sem resposta</p>
+
+    <h2> Perímetro de um hexágono regular</h2>
+    <img src="/imgGP/">
+    <p> Lado: <input type="number" id="lado15"></p>
+    <p> <button type="button" onclick="PHex()">Calcular</button></p>
+    <p id="F17"> Sem resposta</p>
+
+    <h2> Área de um círculo</h2>
+    <img src="/imgGP/">
+    <p> Raio: <input type="number" id="raio0"></p>
+    <p> <button type="button" onclick="ACir()">Calcular</button></p>
+    <p id="F18"> Sem resposta</p>
+
+    <h2> Perímetro de um círculo</h2>
+    <img src="/imgGP/">
+    <p> Raio: <input type="number" id="raio1"></p>
+    <p> <button type="button" onclick="PCir()">Calcular</button></p>
+    <p id="F19"> Sem resposta</p>
+
+</body>
+
+</html>
